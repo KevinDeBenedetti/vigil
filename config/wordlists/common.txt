@@ -1,4 +1,4 @@
-# Security Scanner - Common Wordlist
+# Common Wordlist
 # Paths and files commonly found on web servers
 #
 .htaccess

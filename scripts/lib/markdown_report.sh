@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Security Scanner - Markdown Report Generator (LLM-optimized)
+# Markdown Report Generator (LLM-optimized)
 # ══════════════════════════════════════════════════════════════════════════════
 #
 # Generates a structured Markdown report designed for LLM consumption:

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ══════════════════════════════════════════════════════════════════════════════
-# Security Scanner - Report Generator v3.0 (Modular)
+# Report Generator (Modular)
 # ══════════════════════════════════════════════════════════════════════════════
 #
 # This script generates HTML and JSON reports from security scan results.

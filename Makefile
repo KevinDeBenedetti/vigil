@@ -23,7 +23,7 @@ NC = \033[0m
 help: ## Display this help
 	@echo ""
 	@echo "$(BLUE)╔════════════════════════════════════════════════════════════════╗$(NC)"
-	@echo "$(BLUE)║              🔒 Security Scanner Suite                         ║$(NC)"
+@echo "$(BLUE)║              🔒 Vigil			                         ║$(NC)"
 	@echo "$(BLUE)╚════════════════════════════════════════════════════════════════╝$(NC)"
 	@echo ""
 	@awk 'BEGIN {FS = ":.*##"; printf "Usage:\n  make $(CYAN)<target>$(NC) TARGET=<url>\n\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  $(CYAN)%-15s$(NC) %s\n", $$1, $$2 } /^##@/ { printf "\n$(BOLD)%s$(NC)\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
@@ -219,9 +219,6 @@ check: ## Check prerequisites (Docker, etc.)
 	@docker info >/dev/null 2>&1 || { echo "$(RED)❌ Docker daemon not started$(NC)"; exit 1; }
 	@command -v docker-compose >/dev/null 2>&1 || docker compose version >/dev/null 2>&1 || { echo "$(RED)❌ docker-compose not installed$(NC)"; exit 1; }
 	@echo "$(GREEN)✅ All prerequisites satisfied$(NC)"
-
-version: ## Show version
-	@echo "Security Scanner"
 
 # ══════════════════════════════════════════════════════════════════════════════
 ##@ CI/CD

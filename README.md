@@ -1,4 +1,4 @@
-# 🔒 Security Scanner
+# 🔒 Vigil
 
 A comprehensive, Docker-based security scanning toolkit for web applications. Run multiple industry-standard security tools with a single command.
 
@@ -69,7 +69,7 @@ outputs/
 
 ### [OWASP ZAP](https://www.zaproxy.org/) - Dynamic Application Security Testing
 
-> Zed Attack Proxy (ZAP) is a free and open-source web application security scanner that helps automatically find security vulnerabilities in web applications during development and testing.
+> Zed Attack Proxy (ZAP) is a free and open-source web application that helps automatically find security vulnerabilities in web applications during development and testing.
 
 | Feature       | Description                                              |
 | ------------- | -------------------------------------------------------- |

@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Security Scanner - Parsers Library
+# Parsers Library
 # Individual parsers for each security tool output
 # ══════════════════════════════════════════════════════════════════════════════
 

@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Security Scanner - HTML Report Generator
+# HTML Report Generator
 # ══════════════════════════════════════════════════════════════════════════════
 
 #######################################
@@ -258,7 +258,7 @@ generate_html_footer() {
             </tbody>
         </table>
         <footer>
-            <p>🔒 Security Scanner Report - Generated automatically</p>
+            <p>🔒 Report - Generated automatically</p>
         </footer>
         <div class="toast" id="toast">✅ Markdown copied to clipboard!</div>
     </div>

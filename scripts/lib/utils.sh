@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Security Scanner - Utility Functions
+# Utility Functions
 # Common helper functions for report generation
 # ══════════════════════════════════════════════════════════════════════════════
 
