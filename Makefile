@@ -23,7 +23,7 @@ NC = \033[0m
 help: ## Display this help
 	@echo ""
 	@echo "$(BLUE)╔════════════════════════════════════════════════════════════════╗$(NC)"
-@echo "$(BLUE)║              🔒 Vigil			                         ║$(NC)"
+	@echo "$(BLUE)║              🔒 Vigil			                         ║$(NC)"
 	@echo "$(BLUE)╚════════════════════════════════════════════════════════════════╝$(NC)"
 	@echo ""
 	@awk 'BEGIN {FS = ":.*##"; printf "Usage:\n  make $(CYAN)<target>$(NC) TARGET=<url>\n\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  $(CYAN)%-15s$(NC) %s\n", $$1, $$2 } /^##@/ { printf "\n$(BOLD)%s$(NC)\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
