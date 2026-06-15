@@ -98,4 +98,7 @@ jobs:
     name: Sync docs → central repo
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     uses: KevinDeBenedetti/github-workflows/.github/workflows/cd-docs.yml@main
-    secrets: inherit
+    with:
+      client-id: ${{ vars.RELEASE_APP_CLIENT_ID }}
+    secrets:
+      APP_PRIVATE_KEY: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
